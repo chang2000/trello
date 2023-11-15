@@ -4,14 +4,14 @@ import localFront from "next/font/local";
 import { cn } from "@/lib/utils";
 
 const headingFont = localFront({
-  src: "../../public/fonts/font.woff2",
+  src: "../public/fonts/font.woff2",
 });
 
 
 export const Logo = () => {
   return (
     <Link href="/">
-      <a className="hover:opacity-75 transition items-center gap-x-2 md:flex">
+      <div className="hover:opacity-75 transition items-center gap-x-2 hidden md:flex">
         <Image
           src="/logo.svg"
           alt="Taskify Logo"
@@ -22,6 +22,6 @@ export const Logo = () => {
           Taskify
           </p>
         {/* <span className="text-xl font-bold">Taskify</span> */}
-      </a>
+      </div>
       </Link>);
 } 
