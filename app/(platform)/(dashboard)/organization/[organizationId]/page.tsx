@@ -1,11 +1,11 @@
 // import { auth, OrganizationSwitcher} from '@clerk/nextjs'
-const organizationIdPage = () => {
+function organizationIdPage() {
   // const {userId, orgId} = auth()
   return (
     <div>
       Organization Page
       {/* UserId: {userId} */}
-      {/* <OrganizationSwitcher 
+      {/* <OrganizationSwitcher
       hidePersonal */}
       {/* /> */}
     </div>
