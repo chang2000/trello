@@ -7,15 +7,15 @@ import { cn } from '@/lib/utils'
 export interface Organization {
   id: string
   slug: string
-  imageUri: string
+  imageUrl: string
   name: string
 }
 
 interface NavItemProps {
-  isExpanded?: boolean
-  isActive?: boolean
-  organizationId?: any
-  onExpand?: (id: string) => void
+  isExpanded: boolean
+  isActive: boolean
+  organization: Organization
+  onExpand: (id: string) => void
 }
 
 export function NavItem(
