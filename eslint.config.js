@@ -8,5 +8,6 @@ module.exports = antfu({
     'next-env.d.ts',
     'postcss.config.js',
     'tailwind.config.ts',
+    'components/ui/*',
   ],
 })
